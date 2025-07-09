@@ -1,0 +1,51 @@
+name: 一般的な問い合わせ
+description: 利用方法や確認依頼など、一般的な問い合わせはこちらから
+title: "[問い合わせ] <タイトルを記入>"
+labels: ["inquiry", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🔍 以下の内容を記入してください（不要な項目は削除可）
+
+  - type: input
+    id: contact_person
+    attributes:
+      label: 問い合わせ者
+      description: ご自身の氏名またはユーザーIDを入力してください
+      placeholder: 例）taro.yamada@example.com
+
+  - type: textarea
+    id: question
+    attributes:
+      label: 問い合わせ内容
+      description: わかる範囲で詳しく記載してください（手順、状況、スクリーンショットなど）
+      placeholder: 例）GitHub Actionsが途中で止まってしまいます。
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: 緊急度
+      options:
+        - 高（至急対応が必要）
+        - 中（できるだけ早く対応してほしい）
+        - 低（急ぎではない）
+
+  - type: dropdown
+    id: importance
+    attributes:
+      label: 重要度
+      options:
+        - 高（業務に大きく影響）
+        - 中（困っているが代替策あり）
+        - 低（今後の参考程度）
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 事前確認事項
+      options:
+        - label: FAQやナレッジベースを確認済みです
+        - label: 同様のIssueがないか検索しました
