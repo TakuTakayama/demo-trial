@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: システム障害・緊急連絡はこちら
+    url: https://your.incident.portal/
+    about: 障害・緊急連絡用ポータルに遷移します
