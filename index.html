@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>サポート問い合わせフォーム</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      margin-top: 1.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>サポート問い合わせフォーム</h1>
+
+  <form>
+    <label for="name">お名前</label>
+    <input type="text" id="name" placeholder="例：山田 太郎">
+
+    <label for="email">メールアドレス</label>
+    <input type="email" id="email" placeholder="例：taro.yamada@example.com">
+
+    <label for="category">問い合わせ種別</label>
+    <select id="category">
+      <option>利用方法について</option>
+      <option>アクセス権限の申請</option>
+      <option>ログ提供依頼</option>
+      <option>その他</option>
+    </select>
+
+    <label for="urgency">緊急度</label>
+    <select id="urgency">
+      <option>高（至急対応が必要）</option>
+      <option>中（できるだけ早く）</option>
+      <option>低（急ぎでない）</option>
+    </select>
+
+    <label for="importance">重要度</label>
+    <select id="importance">
+      <option>高（業務に大きく影響）</option>
+      <option>中（支障はあるが代替可能）</option>
+      <option>低（参考程度）</option>
+    </select>
+
+    <label for="message">問い合わせ内容</label>
+    <textarea id="message" rows="6" placeholder="できるだけ詳しくご記載ください"></textarea>
+
+    <button type="submit">送信</button>
+  </form>
+
+</body>
+</html>
